@@ -3,7 +3,7 @@
 
 //Weather Settings
 #define CITY_ID "5295177" //Fountain Hills https://openweathermap.org/current#cityid
-#define OPENWEATHERMAP_APIKEY "cf81927bd5427a0de1a928dffd7b204d" //use your own API key :)
+#define OPENWEATHERMAP_APIKEY "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" //use your own API key :)
 #define OPENWEATHERMAP_URL "http://api.openweathermap.org/data/2.5/weather?id=" //open weather api
 #define TEMP_UNIT "imperial" //metric = Celsius , imperial = Fahrenheit
 #define TEMP_LANG "en"
