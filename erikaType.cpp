@@ -108,13 +108,11 @@ void erikaType::drawSteps(){
 void erikaType::drawBattery(){
     int8_t batteryLevel = 0;
     float VBAT = getBatteryVoltage();
-    if(VBAT > 4.1){
-        batteryLevel = 100;
+    
+    if (VBAT >= 3.3) {
+        batteryLevel = 100.0*(VBAT-3.3)/0.9;
     }
-    else {
-        batteryLevel = 100.0*(VBAT-3.8)/(4.1-3.8);
-    }   
-
+    
     int16_t  x1, y1;
     uint16_t w, h;
     String batt(String(batteryLevel)+"%"); 
